@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"C_Cpp.default.defines": [
+			"__interrupt(x)=",
+			"__trap=",
+			"__at(x)=",
+			"__SDCC",
+			"STM8L15X_MD"
+		],
+		"files.associations": {
+			"stm8l15x.h": "c"
+		}
+	}
+}

@@ -1,0 +1,84 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 4.2.0 #13081 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module funcopy
+                                      6 	.optsdcc -mstm8
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl __nprintf
+                                     12 	.globl _FUN_SIZE
+                                     13 	.globl _funcopy
+                                     14 ;--------------------------------------------------------
+                                     15 ; ram data
+                                     16 ;--------------------------------------------------------
+                                     17 	.area DATA
+      000000                         18 _FUN_SIZE::
+      000000                         19 	.ds 1
+                                     20 ;--------------------------------------------------------
+                                     21 ; ram data
+                                     22 ;--------------------------------------------------------
+                                     23 	.area INITIALIZED
+                                     24 ;--------------------------------------------------------
+                                     25 ; absolute external ram data
+                                     26 ;--------------------------------------------------------
+                                     27 	.area DABS (ABS)
+                                     28 
+                                     29 ; default segment ordering for linker
+                                     30 	.area HOME
+                                     31 	.area GSINIT
+                                     32 	.area GSFINAL
+                                     33 	.area CONST
+                                     34 	.area INITIALIZER
+                                     35 	.area CODE
+                                     36 
+                                     37 ;--------------------------------------------------------
+                                     38 ; global & static initialisations
+                                     39 ;--------------------------------------------------------
+                                     40 	.area HOME
+                                     41 	.area GSINIT
+                                     42 	.area GSFINAL
+                                     43 	.area GSINIT
+                                     44 ;--------------------------------------------------------
+                                     45 ; Home
+                                     46 ;--------------------------------------------------------
+                                     47 	.area HOME
+                                     48 	.area HOME
+                                     49 ;--------------------------------------------------------
+                                     50 ; code
+                                     51 ;--------------------------------------------------------
+                                     52 	.area CODE
+                                     53 ;	src/funcopy.c: 16: void funcopy(unsigned char *dest)
+                                     54 ;	-----------------------------------------
+                                     55 ;	 function funcopy
+                                     56 ;	-----------------------------------------
+      000000                         57 _funcopy:
+      000000 88               [ 1]   58 	push	a
+                                     59 ;	src/funcopy.c: 19: const unsigned char *p_src = (const unsigned char*)_nprintf;
+      000001 90 AEr00r00      [ 2]   60 	ldw	y, #(__nprintf+0)
+                                     61 ;	src/funcopy.c: 9: __asm__("mov _FUN_SIZE, #l_FUN_SEG");
+      000005 35r00u00u00      [ 1]   62 	mov	_FUN_SIZE, #l_FUN_SEG
+                                     63 ;	src/funcopy.c: 22: for (i = 0; i < FUN_SIZE; i++)
+      000009 0F 01            [ 1]   64 	clr	(0x01, sp)
+      00000B                         65 00104$:
+      00000B 7B 01            [ 1]   66 	ld	a, (0x01, sp)
+      00000D C1u00u00         [ 1]   67 	cp	a, _FUN_SIZE+0
+      000010 24 0A            [ 1]   68 	jrnc	00106$
+                                     69 ;	src/funcopy.c: 24: *p_dest++ = *p_src++;
+      000012 90 F6            [ 1]   70 	ld	a, (y)
+      000014 90 5C            [ 1]   71 	incw	y
+      000016 F7               [ 1]   72 	ld	(x), a
+      000017 5C               [ 1]   73 	incw	x
+                                     74 ;	src/funcopy.c: 22: for (i = 0; i < FUN_SIZE; i++)
+      000018 0C 01            [ 1]   75 	inc	(0x01, sp)
+      00001A 20 EF            [ 2]   76 	jra	00104$
+      00001C                         77 00106$:
+                                     78 ;	src/funcopy.c: 26: }
+      00001C 84               [ 1]   79 	pop	a
+      00001D 81               [ 4]   80 	ret
+                                     81 	.area CODE
+                                     82 	.area CONST
+                                     83 	.area INITIALIZER
+                                     84 	.area CABS (ABS)

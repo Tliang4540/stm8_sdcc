@@ -1,0 +1,286 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _divulong
+     00000000  l_CABS                          
+     00000000  l_DABS                          
+     00000000  l_INITIALIZED                   
+     00000000  l_INITIALIZER                   
+     00000000  l__CODE                         
+     00000000  s_CABS                          
+     00000000  s_CABS0                         
+     00000000  s_DABS                          
+     00000000  s__CODE                         
+     00000001  l_DATA                          
+     00000001  l_SSEG                          
+     00000001  s_DATA                          
+     00000002  s_INITIALIZED                   
+     00000003  l_GSFINAL                       
+     00000005  l_CONST                         
+     00000011  l_FUN_SEG                       
+     0000001A  l_GSINIT                        
+     0000001F  l_HOME                          
+     00000400  l_CABS0                         
+     00001248  l_CODE                          
+     00008200  s_HOME                          
+     0000821F  s_GSINIT                        
+     00008239  s_GSFINAL                       
+     0000823C  s_CONST                         
+     00008241  s_CODE                          
+     00008241  s_INITIALIZER                   
+     00009489  s_SSEG                          
+     0000948A  s_FUN_SEG                       
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DATA                                00000001    00000001 =           1. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000001  _FUN_SIZE                          funcopy
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00008200    0000001F =          31. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT                              0000821F    0000001A =          26. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             00008239    00000003 =           3. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CONST                               0000823C    00000005 =           5. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000823C  _SYSDivFactor                      stm8l15x_clk
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                00008241    00001248 =        4680. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008241  _delay_ms                          delay
+     00008277  _delay_us                          delay
+     00008283  _RTC_Wakeup                        main
+     0000828C  _main                              main
+     0000830D  _funcopy                           funcopy
+     0000832B  _USART_DeInit                      stm8l15x_usart
+     00008343  _USART_Init                        stm8l15x_usart
+     000083D2  _USART_ClockInit                   stm8l15x_usart
+     0000840B  _USART_Cmd                         stm8l15x_usart
+     00008420  _USART_SetPrescaler                stm8l15x_usart
+     00008425  _USART_SendBreak                   stm8l15x_usart
+     0000842D  _USART_ReceiveData8                stm8l15x_usart
+     00008430  _USART_ReceiveData9                stm8l15x_usart
+     0000844D  _USART_SendData8                   stm8l15x_usart
+     00008450  _USART_SendData9                   stm8l15x_usart
+     00008476  _USART_ReceiverWakeUpCmd           stm8l15x_usart
+     0000848B  _USART_SetAddress                  stm8l15x_usart
+     0000849D  _USART_WakeUpConfig                stm8l15x_usart
+     000084AF  _USART_HalfDuplexCmd               stm8l15x_usart
+     000084C4  _USART_SmartCardCmd                stm8l15x_usart
+     000084D9  _USART_SmartCardNACKCmd            stm8l15x_usart
+     000084EE  _USART_SetGuardTime                stm8l15x_usart
+     000084F3  _USART_IrDAConfig                  stm8l15x_usart
+     00008508  _USART_IrDACmd                     stm8l15x_usart
+     0000851D  _USART_DMACmd                      stm8l15x_usart
+     00008537  _USART_ITConfig                    stm8l15x_usart
+     000085C6  _USART_GetFlagStatus               stm8l15x_usart
+     000085EE  _USART_ClearFlag                   stm8l15x_usart
+     000085FA  _USART_GetITStatus                 stm8l15x_usart
+     00008683  _USART_ClearITPendingBit           stm8l15x_usart
+     0000868C  _RTC_DeInit                        stm8l15x_rtc
+     00008759  _RTC_Init                          stm8l15x_rtc
+     000087A2  _RTC_StructInit                    stm8l15x_rtc
+     000087B2  _RTC_WriteProtectionCmd            stm8l15x_rtc
+     000087C3  _RTC_EnterInitMode                 stm8l15x_rtc
+     000087E4  _RTC_ExitInitMode                  stm8l15x_rtc
+     000087E9  _RTC_WaitForSynchro                stm8l15x_rtc
+     00008815  _RTC_RatioCmd                      stm8l15x_rtc
+     00008839  _RTC_BypassShadowCmd               stm8l15x_rtc
+     0000885D  _RTC_SetTime                       stm8l15x_rtc
+     000088E4  _RTC_TimeStructInit                stm8l15x_rtc
+     000088F2  _RTC_GetTime                       stm8l15x_rtc
+     00008947  _RTC_GetSubSecond                  stm8l15x_rtc
+     00008962  _RTC_SetDate                       stm8l15x_rtc
+     00008A08  _RTC_DateStructInit                stm8l15x_rtc
+     00008A1C  _RTC_GetDate                       stm8l15x_rtc
+     00008A75  _RTC_SetAlarm                      stm8l15x_rtc
+     00008B8D  _RTC_AlarmStructInit               stm8l15x_rtc
+     00008BA8  _RTC_GetAlarm                      stm8l15x_rtc
+     00008C57  _RTC_AlarmCmd                      stm8l15x_rtc
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                00008241    00001248 =        4680. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008C9F  _RTC_AlarmSubSecondConfig          stm8l15x_rtc
+     00008CDC  _RTC_WakeUpClockConfig             stm8l15x_rtc
+     00008D01  _RTC_SetWakeUpCounter              stm8l15x_rtc
+     00008D16  _RTC_GetWakeUpCounter              stm8l15x_rtc
+     00008D2C  _RTC_WakeUpCmd                     stm8l15x_rtc
+     00008D6A  _RTC_DayLightSavingConfig          stm8l15x_rtc
+     00008D91  _RTC_GetStoreOperation             stm8l15x_rtc
+     00008D97  _RTC_OutputConfig                  stm8l15x_rtc
+     00008DBE  _RTC_SynchroShiftConfig            stm8l15x_rtc
+     00008DF9  _RTC_SmoothCalibConfig             stm8l15x_rtc
+     00008E3B  _RTC_CalibOutputConfig             stm8l15x_rtc
+     00008E5F  _RTC_CalibOutputCmd                stm8l15x_rtc
+     00008E83  _RTC_TamperLevelConfig             stm8l15x_rtc
+     00008EAD  _RTC_TamperFilterConfig            stm8l15x_rtc
+     00008ECE  _RTC_TamperSamplingFreqConfig      stm8l15x_rtc
+     00008EEF  _RTC_TamperPinsPrechargeDuration   stm8l15x_rtc
+     00008F10  _RTC_TamperCmd                     stm8l15x_rtc
+     00008F3A  _RTC_ITConfig                      stm8l15x_rtc
+     00008F82  _RTC_GetFlagStatus                 stm8l15x_rtc
+     00008FA8  _RTC_ClearFlag                     stm8l15x_rtc
+     00008FB5  _RTC_GetITStatus                   stm8l15x_rtc
+     00008FD9  _RTC_ClearITPendingBit             stm8l15x_rtc
+     00009009  _GPIO_DeInit                       stm8l15x_gpio
+     00009017  _GPIO_Init                         stm8l15x_gpio
+     0000908F  _GPIO_ExternalPullUpConfig         stm8l15x_gpio
+     000090A9  _GPIO_Write                        stm8l15x_gpio
+     000090AB  _GPIO_WriteBit                     stm8l15x_gpio
+     000090C2  _GPIO_SetBits                      stm8l15x_gpio
+     000090CB  _GPIO_ResetBits                    stm8l15x_gpio
+     000090D7  _GPIO_ToggleBits                   stm8l15x_gpio
+     000090E0  _GPIO_ReadInputData                stm8l15x_gpio
+     000090E3  _GPIO_ReadOutputData               stm8l15x_gpio
+     000090E5  _GPIO_ReadInputDataBit             stm8l15x_gpio
+     000090EF  _GPIO_ReadOutputDataBit            stm8l15x_gpio
+     000090F8  _CLK_DeInit                        stm8l15x_clk
+     00009139  _CLK_HSICmd                        stm8l15x_clk
+     00009151  _CLK_AdjustHSICalibrationValue     stm8l15x_clk
+     0000915D  _CLK_LSICmd                        stm8l15x_clk
+     00009175  _CLK_HSEConfig                     stm8l15x_clk
+     0000918A  _CLK_LSEConfig                     stm8l15x_clk
+     0000919F  _CLK_ClockSecuritySystemEnable     stm8l15x_clk
+     000091A4  _CLK_ClockSecuritySytemDeglitchC   stm8l15x_clk
+     000091BC  _CLK_CCOConfig                     stm8l15x_clk
+     000091C4  _CLK_SYSCLKSourceConfig            stm8l15x_clk
+     000091C8  _CLK_GetSYSCLKSource               stm8l15x_clk
+     000091CC  _CLK_GetClockFreq                  stm8l15x_clk
+     0000921F  _CLK_SYSCLKDivConfig               stm8l15x_clk
+     00009223  _CLK_SYSCLKSourceSwitchCmd         stm8l15x_clk
+     0000923B  _CLK_RTCClockConfig                stm8l15x_clk
+     00009243  _CLK_BEEPClockConfig               stm8l15x_clk
+     00009247  _CLK_PeripheralClockConfig         stm8l15x_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                00008241    00001248 =        4680. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000092B1  _CLK_LSEClockSecuritySystemEnabl   stm8l15x_clk
+     000092B6  _CLK_RTCCLKSwitchOnLSEFailureEna   stm8l15x_clk
+     000092BB  _CLK_HaltConfig                    stm8l15x_clk
+     000092D9  _CLK_MainRegulatorCmd              stm8l15x_clk
+     000092F1  _CLK_ITConfig                      stm8l15x_clk
+     00009356  _CLK_GetFlagStatus                 stm8l15x_clk
+     000093C4  _CLK_ClearFlag                     stm8l15x_clk
+     000093C9  _CLK_GetITStatus                   stm8l15x_clk
+     00009403  _CLK_ClearITPendingBit             stm8l15x_clk
+     00009413  __mulint                           
+     00009430  __divulong                         _divulong
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00009489    00000001 =           1. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS0                               00000000    00000400 =        1024. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000BC00  _eeprom                            main
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+FUN_SEG                             0000948A    00000011 =          17. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000948A  __nprintf                          funseg
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+
+Files Linked                              [ module(s) ]
+
+./Output/delay.rel                        [ delay ]
+./Output/main.rel                         [ main ]
+./Output/funseg.rel                       [ funseg ]
+./Output/funcopy.rel                      [ funcopy ]
+./Output/stm8l15x_usart.rel               [ stm8l15x_usart ]
+./Output/stm8l15x_rtc.rel                 [ stm8l15x_rtc ]
+./Output/stm8l15x_gpio.rel                [ stm8l15x_gpio ]
+./Output/stm8l15x_clk.rel                 [ stm8l15x_clk ]
+
+
+Libraries Linked                          [ object file ]
+
+D:\sdcc\bin\..\lib\stm8/stm8.lib          [ _mulint.rel ]
+D:\sdcc\bin\..\lib\stm8/stm8.lib          [ _divulong.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+
+User Base Address Definitions
+
+HOME = 0x8200
+DATA = 0x0001
+
+

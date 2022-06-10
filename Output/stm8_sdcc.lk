@@ -1,0 +1,16 @@
+-muwx
+-i ./Output/stm8_sdcc.ihx
+-b HOME = 0x8200
+-b DATA = 0x0001
+-k D:\sdcc\bin\..\lib\stm8
+-l stm8
+./Output/delay.rel
+./Output/main.rel
+./Output/funseg.rel
+./Output/funcopy.rel
+./Output/stm8l15x_usart.rel
+./Output/stm8l15x_rtc.rel
+./Output/stm8l15x_gpio.rel
+./Output/stm8l15x_clk.rel
+
+-e

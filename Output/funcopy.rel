@@ -1,0 +1,40 @@
+XH3
+H B areas 5 global symbols
+M funcopy
+O -mstm8
+S .__.ABS. Def000000
+S l_FUN_SEG Ref000000
+S __nprintf Ref000000
+A _CODE size 0 flags 0 addr 0
+A DATA size 1 flags 0 addr 0
+S _FUN_SIZE Def000000
+A INITIALIZED size 0 flags 0 addr 0
+A DABS size 0 flags 8 addr 0
+A HOME size 0 flags 0 addr 0
+A GSINIT size 0 flags 0 addr 0
+A GSFINAL size 0 flags 0 addr 0
+A CONST size 0 flags 0 addr 0
+A INITIALIZER size 0 flags 0 addr 0
+A CODE size 1E flags 0 addr 0
+S _funcopy Def000000
+A CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 01
+T 00 00 00
+R 00 00 00 01
+T 00 00 00
+R 00 00 00 09
+T 00 00 00 88 90 AE 00 00 35 00 00 00
+R 00 00 00 09 02 06 00 02 F1 03 09 00 01
+T 00 00 07 00 00 0F 01
+R 00 00 00 09 10 03 00 01
+T 00 00 0B
+R 00 00 00 09
+T 00 00 0B 7B 01 C1 00 00 24 0A 90 F6 90 5C F7 5C
+R 00 00 00 09 10 06 00 01
+T 00 00 18 0C 01 20 EF
+R 00 00 00 09
+T 00 00 1C
+R 00 00 00 09
+T 00 00 1C 84 81
+R 00 00 00 09
